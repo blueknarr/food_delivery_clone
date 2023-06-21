@@ -1,16 +1,9 @@
 # food_delivery_clone
 
-A new Flutter project.
+- Hero 사용, 화면 전환
+- Repository 패턴
 
-## Getting Started
+## 화면
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<img width="407" alt="스크린샷 2023-06-22 오전 3 45 43" src="https://github.com/blueknarr/food_delivery_clone/assets/44389424/a6dc0a83-02e6-44c8-ad33-c37a4ad183d2">
+<img width="404" alt="스크린샷 2023-06-22 오전 3 45 55" src="https://github.com/blueknarr/food_delivery_clone/assets/44389424/62c8b44e-5bb2-4ea3-91b0-f202d37faf0c">
