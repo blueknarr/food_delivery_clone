@@ -11,20 +11,23 @@ class HeroScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        flexibleSpace: Container(
-          decoration: BoxDecoration(
-            image: DecorationImage(
-              image: NetworkImage(restaurant.imgUrl),
-              fit: BoxFit.cover,
+        flexibleSpace: Hero(
+          tag: restaurant.id,
+          child: Container(
+            decoration: BoxDecoration(
+              image: DecorationImage(
+                image: NetworkImage(restaurant.imgUrl),
+                fit: BoxFit.cover,
+              ),
+              borderRadius:
+                  const BorderRadius.only(bottomLeft: Radius.circular(30)),
             ),
-            borderRadius:
-                const BorderRadius.only(bottomLeft: Radius.circular(30)),
           ),
         ),
         // 다른 속성들을 추가할 수 있습니다.
         toolbarHeight: 180,
         title: Padding(
-          padding: const EdgeInsets.fromLTRB(0, 70, 40, 0),
+          padding: const EdgeInsets.fromLTRB(0, 70, 0, 0),
           child: Column(
             children: [
               Row(
