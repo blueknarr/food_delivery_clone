@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:food_delivery_clone/ui/components/hero_screen.dart';
+import 'package:go_router/go_router.dart';
 
 import '../../data/model/restaurant.dart';
 
@@ -40,13 +41,16 @@ class RestaurantWidget extends StatelessWidget {
 
   Widget _buildImg(BuildContext context) {
     return GestureDetector(
-      onTap: () async {
-        await Navigator.push(
-          context,
-          MaterialPageRoute(
-            builder: (context) => HeroScreen(restaurant: restaurant),
-          ),
-        );
+      // onTap: () async {
+      //   await Navigator.push(
+      //     context,
+      //     MaterialPageRoute(
+      //       builder: (context) => HeroScreen(restaurant: restaurant),
+      //     ),
+      //   );
+      // },
+      onTap: () {
+        context.push('/main/restaurant', extra: restaurant);
       },
       child: Hero(
         tag: restaurant.id,
